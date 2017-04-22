@@ -7,7 +7,7 @@ end
 
 page '/*.json', layout: false
 
-set :source_uri, 'https://github.com/angeloashmore/resume'
+set :source_uri, 'https://github.com/angeloashmore/angeloashmore.github.io'
 
 helpers do
   def resume
