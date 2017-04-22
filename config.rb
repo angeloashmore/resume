@@ -1,5 +1,9 @@
 activate :protect_emails
-activate :deploy, deploy_method: :git
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.branch = 'master'
+  deploy.build_before = true
+end
 
 page '/*.json', layout: false
 
