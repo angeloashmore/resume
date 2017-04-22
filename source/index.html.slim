@@ -1,0 +1,86 @@
+div.sans-serif.ph3.pv4.pa4-m.pa5-l
+
+  / Container
+  div.mw7.center
+
+    / Header
+    header.flex.items-center.justify-between
+      div
+        h1.ma0.mb1.f3.fw6= resume.basics.name
+        span.f5.gray= resume.basics.label
+      = link_to "Contact", "mailto:#{resume.basics.email}", class: 'pv2 ph3 ba bw1 br3 b--washed-red link f5 fw6 red'
+
+    / Summary
+    section.mv5
+      p.ma0.f2.f1-l.fw3.lh-title= resume.basics.summary
+
+    / Columns
+    div.flex-ns.items-stretch.mb4
+
+      / Left column
+      div.w-50-ns.mr3-ns.mr4-l
+
+        / Work
+        section.mb4
+          h2.ma0.mb4.f7.green.ttu Experience
+          - resume.work.each do |work|
+            article.mb4
+              h3.ma0.mb2.f5.fw6= work.position
+              p.ma0.mb2.lh-copy.gray
+                = link_to work.company, work.website, class: 'bb b--black-20 fw5 link mid-gray'
+                span.mh1 &ndash;
+                = work.summary
+              ul.ma0.mb2.pa0.f7.lh-copy.mid-gray
+                - work.technologies.each do |technology|
+                  li.dib.mr2= technology
+              - if work.note
+                p.ma0.mb2.f7.lh-copy.light-silver.i= work.note
+              p.ma0.f7.light-silver
+                = basic_date(work.start_date)
+                span.mh1 &ndash;
+                = work.end_date ? basic_date(work.end_date) : "Present"
+
+      / Right column
+      div.w-50-ns.ml3-ns.ml4-l
+
+        / Education
+        section.mb4
+          h2.ma0.mb4.f7.light-purple.ttu Education
+          - resume.education.each do |education|
+            article.mb4
+              h3.ma0.mb2.f5.fw6= education.study_type
+              p.ma0.mb2.lh-copy.gray
+                = link_to education.institution, education.website, class: 'bb b--black-20 fw5 link mid-gray'
+              p.ma0.mb2.f7.lh-copy.mid-gray= education.area
+              p.ma0.f7.light-silver
+                = basic_date(education.start_date)
+                span.mh1 &ndash;
+                = education.end_date ? basic_date(education.end_date) : "Present"
+
+        / Skills
+        section.mb4
+          h2.ma0.mb4.f7.light-red.ttu Core Skills
+          ul.list.pa0.lh-copy.mid-gray
+            - resume.skills.each do |skill|
+              li= skill
+
+        / Profiles
+        section.mb4
+          h2.ma0.mb4.f7.blue.ttu Profiles
+          ul.list.mb4.pa0.lh-copy.mid-gray
+            - resume.basics.profiles.each do |profile|
+              li
+                span.fw5.black= profile.network
+                span.mh1 &ndash;
+                = link_to "@#{profile.username}", profile.url, class: 'bb b--black-20 link gray'
+
+    / Footer
+    footer.flex-ns.justify-between.f7.light-silver
+      div.mr4-ns.w-50-ns.lh-copy
+        = "Last updated #{basic_date(last_updated)}."
+      div.ml4-ns.w-50-ns.lh-copy
+        | View as
+        =< link_to "JSON", '/resume.json', class: 'link underline color-inherit'
+        | . View source on
+        =< link_to "GitHub", config.source_uri, class: 'link underline color-inherit'
+        | .
