@@ -1,0 +1,108 @@
+{
+  "basics": {
+    "name": "Angelo Ashmore",
+    "label": "Web Developer",
+    "email": "[view on website]",
+    "website": "http://angeloashmore.com",
+    "summary": "Full stack web developer with a focus in frontend. Loves learning cutting edge technology.",
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "angeloashmore",
+        "url": "https://github.com/angeloashmore"
+      },
+      {
+        "network": "Twitter",
+        "username": "angeloashmore",
+        "url": "https://twitter.com/angeloashmore"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Apple Ala Moana",
+      "position": "Operations Specialist",
+      "website": "https://apple.com/alamoana",
+      "start_date": "2010-04-01",
+      "summary": "From sales, to visual merchandiser, to inventory specialist, building helpful apps along the way.",
+      "technologies": [
+        "ES2017",
+        "React",
+        "Redux",
+        "Electron",
+        "Ruby",
+        "HTML5",
+        "CSS3"
+      ]
+    },
+    {
+      "company": "Ruby Object Mapper",
+      "position": "Web Developer",
+      "website": "http://rom-rb.org",
+      "start_date": "2015-12-01",
+      "end_date": "2016-02-01",
+      "summary": "Designed and developed new website for ROM's open-source documentation, guides, and blog.",
+      "technologies": [
+        "Ruby",
+        "Middleman",
+        "HTML5",
+        "SCSS",
+        "Sketch"
+      ]
+    },
+    {
+      "company": "Padrino",
+      "position": "Web Developer",
+      "website": "http://padrinorb.com",
+      "start_date": "2015-09-01",
+      "summary": "Designed and developed new website for Padrino's open-source documentation with restructured guides.",
+      "technologies": [
+        "Ruby",
+        "Middleman",
+        "HTML5",
+        "SCSS",
+        "Sketch"
+      ]
+    },
+    {
+      "company": "Hokulani Bake Shop",
+      "position": "Web Developer",
+      "website": "https://hokulanibakeshop.com",
+      "start_date": "2013-08-01",
+      "end_date": "2014-08-01",
+      "summary": "Designed and developed new website allowing bakery orders online with CMS integration.",
+      "note": "Website has since been replaced",
+      "technologies": [
+        "Ruby",
+        "Middleman",
+        "HTML5",
+        "SCSS",
+        "Sketch",
+        "Kirby CMS"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Kapiolani Community College",
+      "website": "https://www.kapiolani.hawaii.edu/",
+      "area": "Information and Computer Science",
+      "study_type": "Certificate of Competence, Programming",
+      "start_date": "2016-01-01",
+      "end_date": "2017-05-01"
+    }
+  ],
+  "skills": [
+    "HTML5 / CSS3",
+    "ECMAScript 2017",
+    "Clojure / ClojureScript",
+    "React / Redux",
+    "Reagent / re-frame",
+    "Ruby / Rails",
+    "Node.js",
+    "PostgreSQL",
+    "Vim / Emacs",
+    "Git",
+    "Sketch"
+  ]
+}
