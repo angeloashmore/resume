@@ -30,9 +30,8 @@
         "React",
         "Redux",
         "Electron",
-        "Ruby",
-        "HTML5",
-        "CSS3"
+        "CSS Modules",
+        "Ruby"
       ]
     },
     {
@@ -45,7 +44,7 @@
       "technologies": [
         "Ruby",
         "Middleman",
-        "HTML5",
+        "Slim",
         "SCSS",
         "Sketch"
       ]
@@ -59,7 +58,7 @@
       "technologies": [
         "Ruby",
         "Middleman",
-        "HTML5",
+        "Slim",
         "SCSS",
         "Sketch"
       ]
@@ -76,7 +75,7 @@
         "Ruby",
         "Middleman",
         "HTML5",
-        "SCSS",
+        "Slim",
         "Sketch",
         "Kirby CMS"
       ]
