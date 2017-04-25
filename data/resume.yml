@@ -18,8 +18,8 @@ work:
   position: Operations Specialist
   website: https://apple.com/alamoana
   start_date: 2010-04-01
-  summary: "From sales, to visual merchandiser, to inventory specialist,
-    building helpful apps along the way."
+  summary: "Managing product inventory by building helpful apps and utilities
+    that interface with internal systems."
   technologies:
   - ES2017
   - React
@@ -70,11 +70,12 @@ work:
   - Kirby CMS
 
 education:
-- institution: Kapiolani Community College
-  website: https://www.kapiolani.hawaii.edu/
-  area: Information and Computer Science
-  study_type: Certificate of Competence, Programming
-  start_date: 2016-01-01
+- institutions:
+  - University of Hawaii at Manoa
+  - Kapiolani Community College
+  website: https://www.ics.hawaii.edu/academics/undergraduate-degree-programs/bs-ics/
+  type: Bachelor of Science in Computer Science (Incomplete)
+  start_date: 2010-07-01
   end_date: 2017-05-01
 
 skills:

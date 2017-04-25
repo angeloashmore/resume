@@ -11,8 +11,7 @@ div.sans-serif.ph3.pv4.pa4-m.pa5-l
       = link_to "Contact", "mailto:#{resume.basics.email}", class: 'pv2 ph3 ba bw1 br3 b--washed-red link f5 fw6 red'
 
     / Summary
-    section.mv5
-      p.ma0.f2.f1-l.fw3.lh-title= resume.basics.summary
+    p.mv5.f2.f1-l.fw3.lh-title= resume.basics.summary
 
     / Columns
     div.flex-ns.items-stretch.mb4
@@ -48,10 +47,10 @@ div.sans-serif.ph3.pv4.pa4-m.pa5-l
           h2.ma0.mb4.f7.light-purple.ttu Education
           - resume.education.each do |education|
             article.mb4
-              h3.ma0.mb2.f5.fw6= education.study_type
-              p.ma0.mb2.lh-copy.gray
-                = link_to education.institution, education.website, class: 'bb b--black-20 fw5 link mid-gray'
-              p.ma0.mb2.f7.lh-copy.mid-gray= education.area
+              h3.ma0.mb2.f5.fw6= education.type
+              ul.list.ma0.mb2.pa0.lh-copy.gray
+                - education.institutions.each do |institution|
+                  li= institution
               p.ma0.f7.light-silver
                 = basic_date(education.start_date)
                 span.mh1 &ndash;
