@@ -25,9 +25,8 @@ work:
   - React
   - Redux
   - Electron
+  - CSS Modules
   - Ruby
-  - HTML5
-  - CSS3
 - company: Ruby Object Mapper
   position: Web Developer
   website: http://rom-rb.org
@@ -38,7 +37,7 @@ work:
   technologies:
   - Ruby
   - Middleman
-  - HTML5
+  - Slim
   - SCSS
   - Sketch
 - company: Padrino
@@ -50,7 +49,7 @@ work:
   technologies:
   - Ruby
   - Middleman
-  - HTML5
+  - Slim
   - SCSS
   - Sketch
 - company: Hokulani Bake Shop
@@ -65,7 +64,7 @@ work:
   - Ruby
   - Middleman
   - HTML5
-  - SCSS
+  - Slim
   - Sketch
   - Kirby CMS
 
