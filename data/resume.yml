@@ -3,8 +3,8 @@ basics:
   label: Web Developer
   email: angeloashmore@gmail.com
   website: https://angeloashmore.github.io
-  summary: "Full stack web developer with a focus in frontend. Loves learning
-    cutting edge technology."
+  summary: Full stack web developer with a focus in frontend. Loves learning
+    cutting edge technology.
   profiles:
   - network: GitHub
     username: angeloashmore
@@ -18,8 +18,12 @@ work:
   position: Operations Specialist
   website: https://apple.com/alamoana
   start_date: 2010-04-01
-  summary: "Managing product inventory by building helpful apps and utilities
-    that interface with internal systems."
+  summary: Managing product inventory by building helpful apps and utilities
+    that interface with internal systems.
+  highlights:
+  - Built desktop app to generate inventory labels, increasing accuracy and
+    efficiency.
+  - Wrote Ruby scripts to create easily digestible reports.
   technologies:
   - ES2017
   - React
@@ -34,6 +38,9 @@ work:
   end_date: 2016-02-01
   summary: "Designed and developed new website for ROM's open-source
     documentation, guides, and blog."
+  highlights:
+  - "Launched new website to coincide ROM's 2.0.0 release."
+  - Implemented OOCSS and BEM CSS practices to create custom CSS framework.
   technologies:
   - Ruby
   - Middleman
@@ -46,6 +53,10 @@ work:
   start_date: 2015-09-01
   summary: "Designed and developed new website for Padrino's open-source
     documentation with restructured guides."
+  highlights:
+  - Responsive design beat out several other proposed designs.
+  - Organized guides into chapters for increased readability and
+    maintainability.
   technologies:
   - Ruby
   - Middleman
@@ -57,8 +68,12 @@ work:
   website: https://hokulanibakeshop.com
   start_date: 2013-08-01
   end_date: 2014-08-01
-  summary: "Designed and developed new website allowing bakery orders online
-    with CMS integration."
+  summary: Designed and developed new website allowing bakery orders online with
+    CMS integration.
+  highlights:
+  - Utilized Kirby CMS for content management, later switched to Middleman
+    static site.
+  - Integrated Shopify e-commerce functionality on a static site.
   note: Website has since been replaced
   technologies:
   - Ruby
@@ -78,14 +93,20 @@ education:
   end_date: 2017-05-01
 
 skills:
-- HTML5 / CSS3
-- ECMAScript 2017
-- Clojure / ClojureScript
-- React / Redux
-- Reagent / re-frame
-- Ruby / Rails
-- Node.js
-- PostgreSQL
-- Vim / Emacs
-- Git
-- Sketch
+- category: Frontend
+  skills:
+  - HTML5 / CSS3
+  - ECMAScript 2017
+  - Clojure / ClojureScript
+  - React / Redux
+  - Reagent / re-frame
+- category: Backend
+  skills:
+  - Ruby / Rails
+  - Node.js
+  - PostgreSQL
+- category: Tools
+  skills:
+  - Vim / Emacs
+  - Git
+  - Sketch
