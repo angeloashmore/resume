@@ -6,5 +6,9 @@ html
     meta[name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no"]
     title= current_page.data.title || title
     link[rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"]
+    css:
+      html {
+        -webkit-font-smoothing: antialiased;
+      }
   body
     = yield
