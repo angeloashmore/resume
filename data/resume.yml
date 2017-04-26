@@ -39,7 +39,7 @@ work:
   summary: "Designed and developed new website for ROM's open-source
     documentation, guides, and blog."
   highlights:
-  - "Launched new website to coincide ROM's 2.0.0 release."
+  - "Website launch coincided with ROM's 2.0.0 release."
   - Implemented OOCSS and BEM CSS practices to create custom CSS framework.
   technologies:
   - Ruby
@@ -51,6 +51,7 @@ work:
   position: Web Developer
   website: http://padrinorb.com
   start_date: 2015-09-01
+  end_date: 2015-12-01
   summary: "Designed and developed new website for Padrino's open-source
     documentation with restructured guides."
   highlights:
@@ -71,17 +72,55 @@ work:
   summary: Designed and developed new website allowing bakery orders online with
     CMS integration.
   highlights:
-  - Utilized Kirby CMS for content management, later switched to Middleman
+  - Utilized Kirby CMS for content management. Later switched to Middleman
     static site.
-  - Integrated Shopify e-commerce functionality on a static site.
+  - Integrated Shopify e-commerce functionality on static site.
   note: Website has since been replaced
   technologies:
   - Ruby
   - Middleman
-  - HTML5
   - Slim
   - Sketch
   - Kirby CMS
+- company: Bigger Bird Creative, Inc.
+  position: Web Architect
+  website: https://biggerbird.com
+  start_date: 2005-06-01
+  end_date: 2008-06-01
+  summary: Worked with a team of designers and developers to create and manage
+    web presences for local clients.
+  highlights:
+  - Managed client websites using custom CMS built with Ruby on Rails.
+  - Worked on Great Aloha Run race-time lookup UI.
+  technologies:
+  - Ruby
+  - Rails
+  - jQuery
+  - MySQL
+
+projects:
+- name: immutable-ics
+  url: https://github.com/angeloashmore/immutable-ics
+  summary: Immutable iCalendar document creation.
+  technologies:
+  - ES2017
+  - Immutable.js
+  - Babel
+  - Webpack
+- name: hanami-rethinkdb
+  url: https://github.com/angeloashmore/hanami-rethinkdb
+  summary: RethinkDB adapter for Hanami::Model.
+  technologies:
+  - Ruby
+  - Hanami
+  - RethinkDB
+- name: cleanroom
+  url: https://github.com/angeloashmore/cleanroom
+  summary: Compose your business logic into commands that validate input.
+  technologies:
+  - ES2017
+  - Babel
+  - Webpack
 
 education:
 - institutions:
@@ -93,20 +132,14 @@ education:
   end_date: 2017-05-01
 
 skills:
-- category: Frontend
-  skills:
-  - HTML5 / CSS3
-  - ECMAScript 2017
-  - Clojure / ClojureScript
-  - React / Redux
-  - Reagent / re-frame
-- category: Backend
-  skills:
-  - Ruby / Rails
-  - Node.js
-  - PostgreSQL
-- category: Tools
-  skills:
-  - Vim / Emacs
-  - Git
-  - Sketch
+- HTML5 / CSS3
+- ECMAScript 2017
+- Clojure / ClojureScript
+- React / Redux
+- Reagent / re-frame
+- Ruby / Rails
+- Node.js
+- PostgreSQL
+- Vim / Emacs
+- Git
+- Sketch
