@@ -1,20 +1,20 @@
 div.sans-serif.ph3.pv4.pa4-m.pa5-l
 
   / Container
-  div.mw7.center
+  div.mw8.center
 
     / Header
     header.flex.items-center.justify-between
       div
-        h1.ma0.mb1.f3.fw6= resume.basics.name
-        span.f5.gray= resume.basics.label
+        h1.ma0.mb1.f4.fw6.black= resume.basics.name
+        span.f6.mid-gray= resume.basics.label
       = link_to "Contact", "mailto:#{resume.basics.email}", class: 'pv2 ph3 ba bw1 br3 b--washed-red link f5 fw6 red'
 
     / Summary
-    p.mv5.f2.f1-l.fw3.lh-title= resume.basics.summary
+    p.mv5.f2.f1-l.fw8.lh-title= resume.basics.summary
 
     / Columns
-    div.flex-ns.items-stretch.mb4.mid-gray
+    div.flex-ns.items-stretch.mb4.dark-gray
 
       / Left column
       div.w-60-ns.mr3-ns.mr4-l
@@ -45,9 +45,29 @@ div.sans-serif.ph3.pv4.pa4-m.pa5-l
       / Right column
       div.w-40-ns.ml3-ns.ml4-l
 
+        / Projects
+        section.mb4
+          h2.ma0.mb4.f7.gold.ttu Open-Source
+          - resume.projects.each do |project|
+            article.mb4
+              p.ma0.mb2.lh-copy
+                = link_to project.name, project.url, class: 'bb b--black-20 fw5 link dark-gray'
+                span.mh1 &ndash;
+                = project.summary
+              ul.list.ma0.pa0.f7.lh-copy
+                - project.technologies.each do |technology|
+                  li.dib.mr2= technology
+
+        / Skills
+        section.mb4
+          h2.ma0.mb4.f7.blue.ttu Core Skills
+          ul.list.ma0.pa0.lh-copy
+            - resume.skills.each do |skill|
+              li= skill
+
         / Education
         section.mb4
-          h2.ma0.mb4.f7.light-purple.ttu Education
+          h2.ma0.mb4.f7.gray.ttu Education
           - resume.education.each do |education|
             article.mb4
               h3.ma0.mb2.f5.fw6.black= education.type
@@ -59,19 +79,9 @@ div.sans-serif.ph3.pv4.pa4-m.pa5-l
                 span.mh1 &ndash;
                 = education.end_date ? basic_date(education.end_date) : "Present"
 
-        / Skills
-        section.mb4
-          h2.ma0.mb4.f7.light-red.ttu Core Skills
-          - resume.skills.each do |group|
-            article.mb4
-              h3.ma0.mb2.f5.fw6.black= group.category
-              ul.list.ma0.pa0.lh-copy
-                - group.skills.each do |skill|
-                  li= skill
-
         / Profiles
         section.mb4
-          h2.ma0.mb4.f7.blue.ttu Profiles
+          h2.ma0.mb4.f7.red.ttu Profiles
           ul.list.mb4.pa0.lh-copy
             - resume.basics.profiles.each do |profile|
               li
