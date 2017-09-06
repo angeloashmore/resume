@@ -1,6 +1,6 @@
 {
   "name": "angeloashmore.github.io",
-  "address": "https://angeloashmore.github.io",
+  "address": "angeloashmore.github.io",
   "repo": "git@github.com:angeloashmore/angeloashmore.github.io.git",
   "arch": {
     "name": "middleman",
